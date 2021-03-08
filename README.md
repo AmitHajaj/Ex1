@@ -1,12 +1,12 @@
 
 # Ex1
  This is the first part of excersize 1 an C++ course at Ariel university.
- This excersize is test's based programming, so this part would be only TESTS!
+ This excersize is test's based, so this part would be only TESTS!
  
  ## About
  
- At this excersize we build a snowman from ASCII characters. The snow man will be built by the user's input. The input contain's 8 digit's, when each digit is in range 1-4.
-38
+ At this excersize we build a snowman from ASCII characters. The snowman will be built by the user's input. The input contain's 8 digit's, when each digit is in range 1-4.
+ But as said, at this part we only implements the test's we want to pass at the next part. 
 
 [](https://codegolf.stackexchange.com/posts/49671/timeline)
 
