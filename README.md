@@ -6,16 +6,20 @@
  
  At this excersize we build a snowman from ASCII characters. The snow man will be built by the user's input. The input contain's 8 digit's, when each digit is in range 1-4.
  
- 
-
-
-
-
+`  
+ _===_  
+ (.,.)<br />
+ ( : )<br />
+ ( : )<br />`
 
 Let's make him some friends. This will be the general pattern for our ASCII art snowpeople:
 
-` HHHHH  
-HHHHH\X(LNR)Y\X(TTT)Y\(BBB)\`
+`HHHHH<br /> 
+
+ HHHHH<br />
+X(LNR)Y<br />
+X(TTT)Y<br />
+ (BBB)<br />`
 
 
 The leading spaces and the parentheses are always the same for all snowpeople. The different letters represent sections of the pattern that can individually change. Each section has exactly four presets for what ASCII characters can fill it. By mixing and matching these presets for all eight sections, we can make a variety of snowpeople.
