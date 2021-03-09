@@ -69,19 +69,19 @@ const string B3 = " (___)";
 const string B4 = " (   )";
 
 
-
+//HNLRXYTB
 
 TEST_CASE("Good snowman code") {
     //Arbitrary good test cases.
-    CHECK(snowman(11114411) == string("\n_===_\n(.,.)\n( : )\n( : )"));
-    CHECK(snowman(12341234) == string(H1 + X1T + "(" + L3 + N2 + L4 + ")" + Y4T + X1B + T3 + Y4B + B4));
+    CHECK(snowman(11114411) == string(H1 + X4T + "(" + L1 + N1 + L1 + ")" + Y4T + X4B + T1 + Y4B + B1));
+    CHECK(snowman(12341234) == string(H1 + X1T + "(" + L3 + N2 + L4 + ")" + Y2T + X1B + T3 + Y2B + B4));
     CHECK(snowman(11111111) == string(H1 + X1T + "(" + L1 + N1 + L1 + ")" + Y1T + X1B + T1 + Y1B + B1));
     CHECK(snowman(12121212) == string(H1 + X1T + "(" + L1 + N2 + L2 + ")" + Y2T + X1B + T1 + Y2B + B2));
     CHECK(snowman(13242413) == string(H1 + X2T + "(" + L2 + N3 + L4 + ")" + Y4T + X2B + T1 + Y4B + B3));
-    CHECK(snowman(41321423) == string(H4 + X2T + "(" + L3 + N3 + L2 + ")" + Y4T + X2B + T2 + Y4B + B3));
+    CHECK(snowman(41321423) == string(H4 + X1T + "(" + L3 + N1 + L2 + ")" + Y4T + X1B + T2 + Y4B + B3));
     CHECK(snowman(33232124) == string(H3 + X2T + "(" + L2 + N3 + L3 + ")" + Y1T + X2B + T2 + Y1B + B4));
     CHECK(snowman(44444444) == string(H4 + X4T + "(" + L4 + N4 + L4 + ")" + Y4T + X4B + T4 + Y4B + B4));
-    CHECK(snowman(44441111) == string(H4 + X1T + "(" + L4 + N4 + L4 + ")" + Y1T + X1B + T1 + Y1B + B4));
+    CHECK(snowman(44441111) == string(H4 + X1T + "(" + L4 + N4 + L4 + ")" + Y1T + X1B + T1 + Y1B + B1));
     CHECK(snowman(22223333) == string(H2 + X3T + "(" + L2 + N2 + L2 + ")" + Y3T + X3B + T3 + Y3B + B3));
 }
 
