@@ -1,7 +1,7 @@
 
 # Ex1
- This is the first part of excersize 1 an C++ course at Ariel university.
- This excersize is test's based, so this part would be only TESTS!
+ This is the first and the second part's of excersize 1 in C++ course at Ariel university.
+ This excersize is test's based, so this first part would be only TESTS. The implementation is on the second part.
  
  ## About
  
