@@ -69,8 +69,7 @@ const string B3 = " (___)";
 const string B4 = " (   )";
 
 
-//HNLRXYTB
-
+// --------GOOD CASES!!!--------//
 TEST_CASE("Good snowman code") {
     //Arbitrary good test cases.
     CHECK(snowman(11114411) == string(H1 + X4T + "(" + L1 + N1 + L1 + ")" + Y4T + X4B + T1 + Y4B + B1));
@@ -85,15 +84,15 @@ TEST_CASE("Good snowman code") {
     CHECK(snowman(22223333) == string(H2 + X3T + "(" + L2 + N2 + L2 + ")" + Y3T + X3B + T3 + Y3B + B3));
 }
 
-TEST_CASE("test1212")
-{
-    CHECK(string("aaa") == string("aaa"));
-}
-
+// --------BAD CASES!!!--------//
 TEST_CASE("Bad snowman code-> Less letter's then needed.") {
-    CHECK_THROWS(snowman(555));
     CHECK_THROWS(snowman(1));
-    CHECK_THROWS(snowman(1234554));
+    CHECK_THROWS(snowman(12));
+    CHECK_THROWS(snowman(123));
+    CHECK_THROWS(snowman(1234));
+    CHECK_THROWS(snowman(12345));
+    CHECK_THROWS(snowman(123456));
+    CHECK_THROWS(snowman(1234567));
 }
 TEST_CASE("Bad snowman code-> More letter's then needed."){
     CHECK_THROWS(snowman(123234444));
@@ -105,6 +104,19 @@ TEST_CASE("Bad snowman code-> 8 digit's, but not in range."){
     CHECK_THROWS(snowman(12341239));
     CHECK_THROWS(snowman(99999999));
 }
+
+TEST_CASE("Bad snowman code-> 8 digit's, but one(we check each space) is not in range."){
+    CHECK_THROWS(snowman(12341235));
+    CHECK_THROWS(snowman(12341254));
+    CHECK_THROWS(snowman(12341534));
+    CHECK_THROWS(snowman(12345234));
+    CHECK_THROWS(snowman(12351234));
+    CHECK_THROWS(snowman(12541234));
+    CHECK_THROWS(snowman(15341234));
+    CHECK_THROWS(snowman(52341234));
+}
+
+
 TEST_CASE("Bad snowman code-> 8 digit's, in range, but negative value."){
     CHECK_THROWS(snowman(-11111111));
     CHECK_THROWS(snowman(-12341234));
